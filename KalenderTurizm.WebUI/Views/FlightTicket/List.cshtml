@@ -1,0 +1,100 @@
+﻿
+@{
+    ViewData["Title"] = "List";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<section>
+
+    <div class="content">
+        <div class="filtreleme">
+            <h3>Filtreleme</h3>
+            <div class="filtre">
+                <h4>Hareket Noktası</h4>
+                <ul>
+                    <li>
+                        <input type="checkbox" name="hareket-noktasi" value="nokta1" id="nokta1">
+                        <label for="nokta1">Nokta 1</label>
+                    </li>
+                    <li>
+                        <input type="checkbox" name="hareket-noktasi" value="nokta2" id="nokta2">
+                        <label for="nokta2">Nokta 2</label>
+                    </li>
+                    <li>
+                        <input type="checkbox" name="hareket-noktasi" value="nokta3" id="nokta3">
+                        <label for="nokta3">Nokta 3</label>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="filtre">
+                <h4>Bölge</h4>
+                <ul>
+                    <li>
+                        <input type="checkbox" name="bolge" value="bolge1" id="bolge1">
+                        <label for="bolge1">Bölge 1</label>
+                    </li>
+                    <li>
+                        <input type="checkbox" name="bolge" value="bolge2" id="bolge2">
+                        <label for="bolge2">Bölge 2</label>
+                    </li>
+                    <li>
+                        <input type="checkbox" name="bolge" value="bolge3" id="bolge3">
+                        <label for="bolge3">Bölge 3</label>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="filtre">
+                <h4>Ulaşım Tipi</h4>
+                <ul>
+                    <li>
+                        <input type="checkbox" name="ulasim-tipi" value="tip1" id="tip1">
+                        <label for="tip1">Tip 1</label>
+                    </li>
+                    <li>
+                        <input type="checkbox" name="ulasim-tipi" value="tip2" id="tip2">
+                        <label for="tip2">Tip 2</label>
+                    </li>
+                    <li>
+                        <input type="checkbox" name="ulasim-tipi" value="tip3" id="tip3">
+                        <label for="tip3">Tip 3</label>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="tatil-paketler">
+            <div class="tatil-paket">
+                <img src="tatil1.jpg" alt="Tatil Paketi 1">
+                <h3>Tatil Paketi 1</h3>
+                <p>Gidiş Dönüş Otobüsle</p>
+                <p>Her Cumartesi Hareketli</p>
+                <p>Diğer Tur Tarihleri: 5 Mayıs, 12 Mayıs, 19 Mayıs</p>
+                <button class="siparis-button" href="/Basket/">Şimdi Al</button>
+            </div>
+
+            <div class="tatil-paket">
+                <img src="tatil2.jpg" alt="Tatil Paketi 2">
+                <h3>Tatil Paketi 2</h3>
+                <p>Gidiş Dönüş Otobüsle</p>
+                <p>Her Cumartesi Hareketli</p>
+                <p>Diğer Tur Tarihleri: 8 Haziran, 15 Haziran, 22 Haziran</p>
+                <button class="siparis-button">Şimdi Al</button>
+            </div>
+
+            <div class="tatil-paket">
+                <img src="tatil3.jpg" alt="Tatil Paketi 3">
+                <h3>Tatil Paketi 3</h3>
+                <p>Gidiş Dönüş Otobüsle</p>
+                <p>Her Cumartesi Hareketli</p>
+                <p>Diğer Tur Tarihleri: 3 Temmuz, 10 Temmuz, 17 Temmuz</p>
+                <button class="siparis-button">Şimdi Al</button>
+            </div>
+        </div>
+    </div>
+
+    <link href="~/css/list.css" rel="stylesheet" />
+
+</section>
+

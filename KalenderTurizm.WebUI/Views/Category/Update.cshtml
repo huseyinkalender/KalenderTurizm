@@ -1,0 +1,10 @@
+﻿@using KalenderTurizm.Entities.Dtos;
+@model CategoryDto
+
+<form asp-action="Update" asp-controller="Category" method="post">
+
+    <label>Category Name</label>
+    <input type="text" placeholder="Category Name" asp-for="CategoryName" value="@Model.CategoryName" />
+    <input type="submit" value="Update" />
+
+</form>

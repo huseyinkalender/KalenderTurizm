@@ -1,0 +1,41 @@
+﻿
+@{
+    ViewData["Title"] = "Basket";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h1>Basket</h1>
+
+<section>
+    <div class="content">
+        <h2>Basket</h2>
+        <table>
+            <tr>
+                <th>Tatil Paketi</th>
+                <th>Fiyat</th>
+                <th>İşlem</th>
+            </tr>
+            <tr>
+                <td>Tatil Paketi 1</td>
+                <td>$500</td>
+                <td><button class="sil-button">Sil</button></td>
+            </tr>
+            <tr>
+                <td>Tatil Paketi 2</td>
+                <td>$750</td>
+                <td><button class="sil-button">Sil</button></td>
+            </tr>
+            <tr>
+                <td>Tatil Paketi 3</td>
+                <td>$600</td>
+                <td><button class="sil-button">Sil</button></td>
+            </tr>
+        </table>
+        <div class="toplam">
+            Toplam Fiyat: $1850
+        </div>
+    </div>
+
+    <link href="/css/basket.css" rel="stylesheet" />
+</section>
+

@@ -1,0 +1,57 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>Ana Sayfa - Tatil Seçenekleri</title>
+    <link rel="stylesheet" type="text/css" href="/css/site.css">
+</head>
+<body>
+    <header>
+        <div class="kalenderturizm">
+            <div class="kalenderturizm-header">
+                <div class="kalenderturizm-logo">Kalender Turizm</div>
+                <div class="kalenderturizm-buttons">
+                    <a href="/Account/Login">Giriş Yap</a>
+                    <a href="/Account/Register">Kayıt Ol</a>
+                </div>
+            </div>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="/">Anasayfa</a></li>
+                <li class="dropdown">
+                    <a href="/Hotel/List">Otel</a>
+                   
+                </li>
+                <li class="dropdown">
+                    <a href="/Tour/List">Tur</a>
+                  
+                </li>
+                <li><a href="/Ship/List">Gemi</a></li>
+                <li><a href="/FlightTicket/List">Uçak Bileti</a></li>
+                <li><a href="/WinterHoliday/List">Kış Tatili</a></li>
+            </ul>
+        </nav>
+    </header>
+
+
+
+
+    <section class="content">
+
+        @RenderBody()
+    </section>
+
+
+
+
+    <footer>
+        <div class="footer-content">
+            <p>&copy; 2023 Kalender Turizm - Tüm hakları saklıdır.</p>
+            <ul>
+                <li><a href="/KalenderTurizm/About">Hakkımızda</a></li>
+                <li><a href="/KalenderTurizm/Contact">İletişim</a></li>
+            </ul>
+        </div>
+    </footer>
+</body>
+</html>

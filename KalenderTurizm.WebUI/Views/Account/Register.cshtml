@@ -1,0 +1,36 @@
+﻿
+@{
+    ViewData["Title"] = "Register";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+@model int
+
+<section>
+    <div class="register-container">
+        <form id="register-form" asp-action="Register" asp-controller="Account" method="post">
+            <h2>Register for Kalender Turizm</h2>
+            <label for="username">Username:</label>
+            <input type="text" id="username" name="userName" required>
+            <label for="firstname">First Name:</label>
+            <input type="text" id="firstname" name="firstName" required>
+            <label for="lastname">Last Name:</label>
+            <input type="text" id="lastname" name="lastName" required>
+            <label for="phonenumber">Phone Number:</label>
+            <input type="text" id="phoneNumber" name="phoneNumber" required>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="Password" required>
+            <label for="password">Confirm Password:</label>
+            <input type="password" id="password" name="confirmPassword" required>
+            <button type="submit">Register</button> <br /><br />
+
+            Zaten bir Kalender Turizm hesabınız mı var? <a href="/Account/Login">Giriş Yapın</a>
+
+        </form>
+    </div>
+
+    <link href="/css/register.css" rel="stylesheet" />
+</section>
+

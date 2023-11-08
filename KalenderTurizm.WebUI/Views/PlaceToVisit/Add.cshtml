@@ -1,0 +1,36 @@
+﻿@using KalenderTurizm.Entities.Dtos;
+
+@{
+    ViewData["Title"] = "Add";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+@model PlaceToVisitDto
+
+<form asp-action="Add" asp-controller="PlaceToVisit" method="post">
+    <h1>Place To Visit Add</h1>
+   
+    <label>Category Id:</label>
+    <input type="text" name="categoryId" /> <br />
+    <label>Tour Id:</label>
+    <input type="text" name="tourId" /> <br />
+    <label>Place To Visit Name:</label>
+    <textarea name="placesToVisit"></textarea> <br />
+    <label>Price:</label>
+    <input type="text" name="price" /> <br />
+    <label>Description:</label>
+   <textarea name="description"></textarea> <br />
+    <label>Type Of Transportation:</label>
+    <input type="text" name="typeOfTransportation" /> <br />
+    <label>Tour Duration:</label>
+    <input type="text" name="tourDuration" /> <br />
+    <label>Starting Point:</label>
+    <input type="text" name="startingPoint" /> <br />
+    <label>Period:</label>
+    <input type="text" name="period" /> <br />
+    <label>Image:</label>
+    <input type="text" name="Image" /> <br />
+
+    <input type="submit" value="Add" />
+</form>
+

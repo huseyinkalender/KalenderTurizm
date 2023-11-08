@@ -1,0 +1,28 @@
+﻿.login-container {
+    text-align: center;
+    padding: 20px;
+}
+
+#login-form {
+    max-width: 300px;
+    margin: 0 auto;
+    text-align: left;
+}
+
+    #login-form h2 {
+        font-size: 20px;
+        margin-bottom: 10px;
+    }
+
+    #login-form label, #login-form input {
+        display: block;
+        margin-bottom: 10px;
+    }
+
+    #login-form button {
+        background-color: #444;
+        color: #fff;
+        padding: 10px;
+        border: none;
+        cursor: pointer;
+    }

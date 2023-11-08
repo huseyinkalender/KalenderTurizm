@@ -1,0 +1,28 @@
+﻿
+@{
+    ViewData["Title"] = "Login";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+@model int
+
+<link href="/css/login.css" rel="stylesheet" />
+
+
+<section>
+    <div class="login-container">
+        <form id="login-form" asp-action="Login" asp-controller="Account" method="post">
+            <h2>Login to Kalender Turizm</h2>
+            <label for="username">Email:</label>
+            <input type="text" id="email" name="email" required>
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="Password" required>
+            <button type="submit">Login</button>
+        </form> <br />
+
+        Hesabınız Yok mu ? <a href="/Account/Register">Kayıt Olun</a>
+
+    </div>
+    <script src="login.js"></script>
+
+</section>
